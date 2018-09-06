@@ -26,6 +26,8 @@ var data = [
 
 var rightAnswers = 0;
 var wrongAnswers = 0;
+var song = document.createElement("audio");
+song.setAttribute("src", "assets/images/The-Avengers-Theme-Song.mp3");
 
 
 
@@ -41,7 +43,7 @@ $("#start").on("click", function (startGameTimer) {
     $("#start").hide()
     $("#display-questions").show();
     $("#display-options").show();
-
+    song.play();
     startTimer();
 
 
