@@ -37,6 +37,7 @@ $("#display-questions").hide();
 $("#display-options").hide();
 $("#right-answers").hide();
 $("#wrong-answers").hide();
+$("#restart-game").hide();
 
 
 $("#start").on("click", function (startGameTimer) {
@@ -45,6 +46,7 @@ $("#start").on("click", function (startGameTimer) {
     $("#display-options").show();
     song.play();
     startTimer();
+    $("#time").show();
 
 
 });
@@ -89,6 +91,7 @@ function displayNextQuestion() {
         $("#time").hide();
         $("#right-answers").show();
         $("#wrong-answers").show();
+        $("#restart-game").show();
 
         return
 
@@ -143,5 +146,25 @@ $("#display-options").on("click", ".option-button", function () {
     startTimer();
 
     displayNextQuestion();
+
+});
+
+
+$("#restart-game").on("click", function () {
+    index = 0;
+    i = 0;
+    $("#correct-answer").hide();
+    $("#wrong-answer").hide();
+    $("#display-questions").hide();
+    $("#display-options").hide();
+    $("#right-answers").hide();
+    $("#wrong-answers").hide();
+    $("#restart-game").hide();
+    $("#start").show();
+    
+    displayNextQuestion();
+    rightAnswers = 0;
+    wrongAnswers = 0;
+
 
 });
