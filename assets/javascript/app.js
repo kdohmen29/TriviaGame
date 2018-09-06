@@ -96,7 +96,7 @@ function displayNextQuestion() {
 
     var question = data[index].question;
     for (let i = 0; i < data[index].options.length; i++) {
-        let newButton = $("<button class= 'btn btn-danger'>")
+        let newButton = $("<button class= 'btn btn-danger m-2'>")
         let eachOption = data[index].options[i];
         newButton.text(eachOption);
         newButton.attr("info", eachOption);
