@@ -50,7 +50,7 @@ $("#start").on("click", function (startGameTimer) {
 var gameTimer;
 //Timer
 function startTimer() {
-    var time = 9999999;
+    var time = 15;
     $("#time").text(time);
     gameTimer = setInterval(function () {
         time--;
