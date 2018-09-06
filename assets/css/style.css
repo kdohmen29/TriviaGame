@@ -1,0 +1,22 @@
+body{
+    background-image: url(../images/marvelbackground.jpeg)
+}
+.container {
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    border: 2px solid red;
+    width: 300px;
+    padding: 30px;
+    background-color: darkred;
+    font-family: fantasy;
+}
+.title {
+    font-size: 2em;
+}
+#time {
+    font-size: 2em;
+}
+.spacing {
+    margin-top: 2em;
+}
