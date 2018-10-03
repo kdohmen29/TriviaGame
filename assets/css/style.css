@@ -1,5 +1,7 @@
 body{
-    background-image: url(../images/marvelbackground.jpeg)
+    background-image: url(../images/marvelbackground.jpeg);
+    width: 100%;
+    
 }
 .container {
     opacity: .95;
